@@ -1,61 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8T93RKVHF"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-X8T93RKVHF');
-    </script>
-    <!-- End of Google Analytics -->
-
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="League of Legends Random Champion Generator with the extended ability to select based on the lane preference. Built using Vanilla JavaScript."/>
-    <meta property="og:title" content="League of Legends Random Champion Generator" />
-    <meta property="og:description" content="League of Legends Random Champion Generator with the extended ability to select based on the lane preference. Built using Vanilla JavaScript and with love from https://filipify.one." />
-    <meta property="og:url" content="https://leaguerandomizer.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_GB" />
-    <link rel="stylesheet" href="style.css">
-    <title>LoL Random Champion Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <script defer src="script.js"></script>
+    <title>Random champions</title>
 </head>
 <body>
-
-<div class="container">
-    <h1 class="standout"> Random League <span class="color-emphasis-1">Champ Generator</span></h1>
-
-    <h2 class="champ-pick" id="underlined"> Your Champ: </h2>
-    <h2 class="champ-pick" id="champPickElement"></h2>
-
-    <button class="btn" onclick="randomChampion()"> RANDOMIZE </button>
-
-    <div class="selection">
-        <p> Select Lane: </p>
-        <select name="championRole" id="championRole">
-            <option value="adc">ADC</option>
-            <option value="support">SUPPORT</option>
-            <option value="jungle">JUNGLE</option>
-            <option value="mid">MID</option>
-            <option value="top">TOP</option>
-            <option value="general" selected>GENERAL</option>
-        </select>
-    </div>
-
-
-</div>
-
-
-<!-- Footer -->
-<div class="footer">
+    <main>
+            <div class="champion-generator">
+                <h1 class="standout">Random League <span class="color-emphasis-1">Champ Generator</span></h1>
+                <div class="champion-info">
+                    <img  class="champion-icon">
+                    <p class="champion-name">??</p>
+                </div>        
+                <div class="buttons">
+                    <button id="top">TOP</button>
+                    <button id="mid">MID</button>
+                    <button id="adc">ADC</button>
+                    <button id="jg">JUNGLE</button>
+                    <button id="sup">SUP</button>
+                </div>
+            </div>
+            <div>
+                <a href="" class="link" target="_blank"><button class="link-button" >OP.GG Build Link</button></a>
+            </div>
+    </main>
+    <div class="footer">
     Made with &hearts; by UlikGames
 </div>
-<script src="app.js"></script>
 </body>
 </html>
